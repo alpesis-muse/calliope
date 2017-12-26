@@ -13,4 +13,5 @@ if __name__ == '__main__':
 
         elif key == "n":
             idx = random.randint(0, len(vocabularies)-1)
-            print vocabularies[idx].strip()
+            word = vocabularies[idx].strip()
+            print word
