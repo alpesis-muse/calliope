@@ -2,8 +2,15 @@ import random
 
 
 if __name__ == '__main__':
+
     vocabularies = open('data/vocabularies.txt', 'rb').readlines()
-    idx = random.randint(0, len(vocabularies))
-    print vocabularies[idx]
-    #for vocabulary in vocabularies.readlines():
-    #    print vocabulary.strip()
+
+    while (1):
+        key = raw_input("Please enter [n: next, q: quit]: ")
+
+        if key == "q":
+            exit(0)
+
+        elif key == "n":
+            idx = random.randint(0, len(vocabularies)-1)
+            print vocabularies[idx].strip()
