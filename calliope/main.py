@@ -1,3 +1,4 @@
+import os
 import random
 
 
@@ -15,3 +16,4 @@ if __name__ == '__main__':
             idx = random.randint(0, len(vocabularies)-1)
             word = vocabularies[idx].strip()
             print word
+            os.system('say {0}'.format(word))
