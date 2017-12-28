@@ -19,7 +19,7 @@ def calliope():
             idx = random.randint(0, len(vocabularies)-1)
             word = vocabularies[idx].strip()
             print word
-            # os.system('say {0}'.format(word))
+            os.system('say {0}'.format(word))
             word_translated = locale.translate(word)
             print word_translated
 

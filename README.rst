@@ -9,7 +9,9 @@ Features
 ==============================================================================
 
 - Randomly choosing a word from the vocabulary list
-- Speaking out the word with Text-To-Speech
+- Voice
+  - pronouncing the word shown with text-to-speech library
+  - text-to-speech with linux support (TODO)
 - Translation
   - translating a word from English to Chinese
   - multiple languages support (TODO)
