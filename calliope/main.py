@@ -1,10 +1,13 @@
 import os
 import random
 
+import translator
+
 
 if __name__ == '__main__':
 
     vocabularies = open('data/vocabularies.txt', 'rb').readlines()
+    locale = translator.Translator()
 
     while (1):
         key = raw_input("Please enter [n: next, q: quit]: ")
@@ -16,4 +19,6 @@ if __name__ == '__main__':
             idx = random.randint(0, len(vocabularies)-1)
             word = vocabularies[idx].strip()
             print word
-            os.system('say {0}'.format(word))
+            # os.system('say {0}'.format(word))
+            word_translated = locale.translate(word)
+            print word_translated
