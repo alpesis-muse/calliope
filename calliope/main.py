@@ -4,7 +4,7 @@ import random
 import translator
 
 
-if __name__ == '__main__':
+def calliope():
 
     vocabularies = open('data/vocabularies.txt', 'rb').readlines()
     locale = translator.Translator()
@@ -22,3 +22,7 @@ if __name__ == '__main__':
             # os.system('say {0}'.format(word))
             word_translated = locale.translate(word)
             print word_translated
+
+
+if __name__ == '__main__':
+    calliope()
