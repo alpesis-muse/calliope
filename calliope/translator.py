@@ -14,21 +14,23 @@ class Translator:
         self.lang_from = lang_from
         self.lang_to = lang_to
 
+        self.url = settings.TRANSLATOR_URL
+        self.headers = settings.TRANSLATOR_HEADERS
+        self.text_limit = settings.TRANSLATOR_TEXT_LIMIT
+
 
     def translate(self, text):
         """"""
-        if self.lang_from == self.lang_to:
-            return text
-
-        self.text_list = textwrap.wrap(text, 1000, replace_whitespace=False)
-        return ' '.join(self._translate_from_webapi(s) for s in self.text_list)
+        if self.lang_from == self.lang_to: return text
+        content = textwrap.wrap(text, self.text_limit, replace_whitespace=False)
+        return ' '.join(self._translate_from_webapi(s) for s in content)
 
 
     def _translate_from_webapi(self, text):
         """"""
         text = quote(text, '')
-        url = settings.TRANSLATOR_URL % (text, self.lang_from, self.lang_to)
-        request = urllib2.Request(url=url, headers=settings.TRANSLATOR_HEADERS)
+        url = self.url % (text, self.lang_from, self.lang_to)
+        request = urllib2.Request(url=url, headers=self.headers)
         content = urllib2.urlopen(request).read().decode('utf-8')
         return json.loads(content)['responseData']['translatedText']
 
