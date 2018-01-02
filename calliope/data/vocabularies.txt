@@ -13,14 +13,11 @@ persuasively
 continental ice
 retreat
 watercraft
-skin boat
 Beringia
 the Gulf of Alaska
 coast
 prior to
-melting
 archaeologist
-geologist
 glacial ice
 continental shelf
 Alaska Peninsula
@@ -43,3 +40,4 @@ the use of watercraft
 impetus
 a southerly direction
 Calliope
+Verona
