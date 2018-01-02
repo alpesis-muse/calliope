@@ -10,12 +10,13 @@ Features
 
 - Randomly choosing a word from the vocabulary list
 - Voice
-  - pronouncing the word shown with text-to-speech library
-  - text-to-speech with linux support (TODO)
+    - pronouncing the word shown with text-to-speech library
+    - text-to-speech with linux support (TODO)
 - Translation
-  - translating a word from English to Chinese
-  - multiple languages support (TODO)
+    - translating a word from English to Chinese
+    - multiple languages support (TODO)
 - Composing the sentences by inserting the words (TODO)
+- Daily news (TODO)
 
 ==============================================================================
 Getting Started
