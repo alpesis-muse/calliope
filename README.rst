@@ -17,6 +17,7 @@ Features
     - multiple languages support (TODO)
 - Composing the sentences by inserting the words (TODO)
 - Daily news (TODO)
+- Music Albums (TODO)
 
 ==============================================================================
 Getting Started
