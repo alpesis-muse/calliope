@@ -3,10 +3,18 @@ import random
 
 import translator
 
+DATA = [
+  "data/vocabularies.txt",
+  "data/noun.txt",
+  "data/adj.txt"
+]
 
 def calliope():
 
-    vocabularies = open('data/vocabularies.txt', 'rb').readlines()
+    vocabularies = []
+    for txt in DATA:
+        words = open(txt, 'rb').readlines()
+        vocabularies.extend(words)
     locale = translator.Translator()
 
     while (1):
