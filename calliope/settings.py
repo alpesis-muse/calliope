@@ -1,4 +1,13 @@
 # ----------------------------------------------------------------------------
+# Data
+
+DATA_LIST = [
+    "data/vocabularies/vocabularies.txt",
+    "data/vocabularies/noun.txt",
+    "data/vocabularies/adj.txt"
+]
+
+# ----------------------------------------------------------------------------
 # Translator
 
 # translator server headers
