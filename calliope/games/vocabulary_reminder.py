@@ -1,7 +1,7 @@
 import os
 import random
 
-from settings import VOCABULARY_LIST
+from settings import VOCABULARIES_DIR
 from settings import LANGUAGE_SPEAKERS
 from translator import Translator
 
@@ -32,7 +32,7 @@ class VocabularyReminder:
                 print word_translated
 
     def _prepare(self):
-        for txt in VOCABULARY_LIST:
-            words = open(txt, 'rb').readlines()
+        for txt in os.listdir(VOCABULARIES_DIR):
+            words = open(VOCABULARIES_DIR+txt, 'rb').readlines()
             self.vocabularies.extend(words)
             

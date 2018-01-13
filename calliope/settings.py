@@ -1,12 +1,7 @@
 # ----------------------------------------------------------------------------
 # Data
 
-VOCABULARY_LIST = [
-    "data/vocabularies/vocabularies.txt",
-    "data/vocabularies/noun.txt",
-    "data/vocabularies/adj.txt"
-]
-
+VOCABULARIES_DIR = "data/vocabularies/"
 ARTICLES_DIR = "data/articles/"
 
 # ----------------------------------------------------------------------------
