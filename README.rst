@@ -9,9 +9,10 @@ Features
 ==============================================================================
 
 Games:
+
 - VocabularyReminder
-  - multiple languages support (TODO)
-  - composing the sentenses by inserting the words (TODO)
+    - multiple languages support (TODO)
+    - composing the sentenses by inserting the words (TODO)
 - ArticleReader
 - Daily news (TODO)
 - Music Albums (TODO)
