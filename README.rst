@@ -25,6 +25,7 @@ Getting Started
 
 Prequisites:
 
+- OSX
 - virtualenv
 
 How it runs:
