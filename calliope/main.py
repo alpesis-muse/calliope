@@ -1,32 +1,5 @@
-import os
-import random
-
-import settings
-import translator
-
-
-def calliope():
-
-    vocabularies = []
-    for txt in settings.DATA_LIST:
-        words = open(txt, 'rb').readlines()
-        vocabularies.extend(words)
-    locale = translator.Translator()
-
-    while (1):
-        key = raw_input("Please enter [n: next, q: quit]: ")
-
-        if key == "q":
-            exit(0)
-
-        elif key == "n":
-            idx = random.randint(0, len(vocabularies)-1)
-            word = vocabularies[idx].strip()
-            print word
-            os.system('say -v {0} {1}'.format(settings.LANGUAGE_SPEAKERS["en_US"][-3], word))
-            word_translated = locale.translate(word)
-            print word_translated
+from mainboard import mainboard
 
 
 if __name__ == '__main__':
-    calliope()
+    mainboard()
