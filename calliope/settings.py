@@ -1,18 +1,20 @@
 # ----------------------------------------------------------------------------
 # Data
 
-DATA_LIST = [
+VOCABULARY_LIST = [
     "data/vocabularies/vocabularies.txt",
     "data/vocabularies/noun.txt",
     "data/vocabularies/adj.txt"
 ]
+
+ARTICLES_DIR = "data/articles/"
 
 # ----------------------------------------------------------------------------
 # Voice
 
 # ref: https://apple.stackexchange.com/questions/3454/say-in-different-language
 LANGUAGE_SPEAKERS = {
-  "en_US": ["Agnes", "Albert", "Alex", "Bahh", "Bells", "Boing", "Bruce", "Bubbles",
+  "en_US": ["Alex", "Bahh", "Bells", "Boing", "Bruce", "Bubbles",
             "Cellos", "Deranged", "Fred", "Hysterical", "Junior", "Kathy", "Princess",
             "Ralph", "Samantha", "Trinoids", "Victoria", "Whisper", "Zarvox"],
   "en_GB": ["Daniel"],
