@@ -9,9 +9,9 @@ class ArticleReader:
     def __init__(self):
         self.articles = []
 
-        print("Welcome to Article Reader!")
 
     def run(self):
+        print("Welcome to Article Reader!")
         self._prepare()
         self._control()
 

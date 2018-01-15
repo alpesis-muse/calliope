@@ -14,8 +14,10 @@ Games:
     - multiple languages support (TODO)
     - composing the sentenses by inserting the words (TODO)
 - ArticleReader
+- MusicPlayer
+    - randomly playing the music (TODO)
+    - selecting the music and show the link (TODO)
 - Daily news (TODO)
-- Music Albums (TODO)
 
 ==============================================================================
 Getting Started
@@ -45,7 +47,8 @@ Calliope
     Game List:
     - 1. Vocabulary Reminder
     - 2. Article Reader
-    Please enter 1 or 2 to choose the game, q to exit:
+    - 3. Music Player
+    Please choose a game [enter index, or q to exit]:
     1
     Welcome to Vocabulary Reminder!
     Please enter [n: next, q: quit]: n

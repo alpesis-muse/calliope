@@ -1,5 +1,5 @@
-from mainboard import mainboard
+from board import board
 
 
 if __name__ == '__main__':
-    mainboard()
+    board()

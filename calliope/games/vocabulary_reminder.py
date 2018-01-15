@@ -12,9 +12,9 @@ class VocabularyReminder:
         self.vocabularies = []
         self.locale = Translator() 
 
-        print("Welcome to Vocabulary Reminder!")
 
     def run(self):
+        print("Welcome to Vocabulary Reminder!")
         self._prepare()
 
         while (1):
