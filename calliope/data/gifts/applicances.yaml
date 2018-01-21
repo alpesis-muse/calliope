@@ -1,0 +1,6 @@
+applicance:
+  item1:
+    item: coffee maker
+    valid:
+      - moka coffe maker
+      - siphon coffe maker

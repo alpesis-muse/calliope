@@ -1,0 +1,5 @@
+toy:
+  item1:
+    item: puzzle
+    valid:
+      - cast puzzle

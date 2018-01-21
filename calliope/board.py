@@ -1,12 +1,14 @@
 from games.vocabulary_reminder import VocabularyReminder
 from games.article_reader import ArticleReader
 from games.music_player import MusicPlayer
+from games.gift_selector import GiftSelector
 
 GAME_LIST = """
 Game List:
 - 1. Vocabulary Reminder
 - 2. Article Reader
 - 3. Music Player
+- 4. Gift Selector
 Please choose a game [enter index, or q to exit]:  
 """
 
@@ -28,6 +30,10 @@ def board():
         elif key == "3":
             music_player = MusicPlayer()
             music_player.run()
+
+        elif key == "4":
+            gift_selector = GiftSelector()
+            gift_selector.run()
 
         else:
             print("Please enter 1 or 2: ")

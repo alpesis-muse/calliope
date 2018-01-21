@@ -4,6 +4,7 @@
 VOCABULARIES_DIR = "data/vocabularies/"
 ARTICLES_DIR = "data/articles/"
 ALBUMS_DIR = "data/albums/"
+GIFTS_DIR = "data/gifts/"
 
 # ----------------------------------------------------------------------------
 # Voice

@@ -17,6 +17,7 @@ Games:
 - MusicPlayer
     - randomly playing the music (TODO)
     - selecting the music and show the link (TODO)
+- GiftSelector
 - Daily news (TODO)
 
 ==============================================================================
