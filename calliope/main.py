@@ -1,5 +1,7 @@
-from board import board
+from event_driven_board import EventDrivenBoard
 
 
 if __name__ == '__main__':
-    board()
+
+    board = EventDrivenBoard()
+    board.play()
