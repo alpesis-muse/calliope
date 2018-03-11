@@ -3,15 +3,15 @@ import random
 
 from settings import VOCABULARIES_DIR
 from settings import LANGUAGE_SPEAKERS
-from translator import Translator
+#from translator import Translator
+from googletrans import Translator
 
 
 class VocabularyReminder:
 
     def __init__(self):
         self.vocabularies = []
-        self.locale = Translator() 
-
+        self.translator = Translator()
 
     def run(self):
         print("Welcome to Vocabulary Reminder!")
@@ -28,8 +28,8 @@ class VocabularyReminder:
                 word = self.vocabularies[idx].strip()
                 print word
                 os.system('say -v {0} {1}'.format(LANGUAGE_SPEAKERS["en_US"][-3], word))
-                word_translated = self.locale.translate(word)
-                print word_translated
+                word_translated = self.translator.translate(word, dest='zh-cn')
+                print word_translated.text.encode('utf-8')
 
     def _prepare(self):
         for txt in os.listdir(VOCABULARIES_DIR):
